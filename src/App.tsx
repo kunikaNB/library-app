@@ -1,24 +1,16 @@
 import React from 'react';
 import './App.css';
+import { Navbar } from './layouts/NavbarAndFooter/Navbar';
+import { Footer } from './layouts/NavbarAndFooter/Footer';
+import { HomePage } from './layouts/HomePage/Homepage';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <HomePage/>
+      <Footer/>
     </div>
-  );
+    );
 }
 
-export default App;
